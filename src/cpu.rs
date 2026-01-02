@@ -67,9 +67,9 @@ impl Cpu {
                 // NOP
             }
             0x1 => {
-                let val = bus.read16(self.pc);
+                let val = bus.read16(self.registers.pc);
                 self.registers.set_bc(val);
-                self.pc += 2;
+                self.registers.pc += 2;
             }
             _ => panic!("Invalid opcode {opcode}"),
         }
