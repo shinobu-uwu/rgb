@@ -1,4 +1,4 @@
-use crate::flags::{LcdControlFlags, LcdStatusFlags};
+use crate::flags::LcdControlFlags;
 
 #[derive(Debug)]
 pub struct Ppu {
